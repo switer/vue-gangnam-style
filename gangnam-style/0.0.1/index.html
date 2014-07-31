@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>gangnam-style web component</title>
+    <link rel="stylesheet" href="/c/gangnam-style/0.0.1/gangnam-style/gangnam-style.css">
+</head>
+<body>
+    <div id="container"></div>
+    <script src="/gangnam-style/0.0.1/scrat.js"></script>
+    <script src="/gangnam-style/0.0.1/vue.js"></script>
+    <script>
+        require.config({
+    "debug": false,
+    "cache": false,
+    "urlPattern": "/c/%s",
+    "comboPattern": "/co??%s",
+    "alias": {
+        "boot": "gangnam-style/0.0.1/boot/boot.js",
+        "gangnam-psy": "gangnam-style/0.0.1/gangnam-psy/gangnam-psy.js",
+        "gangnam-style": "gangnam-style/0.0.1/gangnam-style/gangnam-style.js",
+        "app": "gangnam-style/0.0.1/app/app.js"
+    },
+    "version": "0.0.1",
+    "name": "gangnam-style",
+    "combo": false,
+    "hash": "11ec21c",
+    "deps": {
+        "gangnam-style/0.0.1/app/app.js": [
+            "gangnam-style",
+            "gangnam-psy",
+            "gangnam-style/0.0.1/app/app.css"
+        ],
+        "gangnam-style/0.0.1/gangnam-psy/gangnam-psy.js": [
+            "gangnam-style/0.0.1/gangnam-psy/gangnam-psy.css"
+        ],
+        "gangnam-style/0.0.1/gangnam-style/gangnam-style.js": [
+            "gangnam-style/0.0.1/gangnam-style/gangnam-style.css"
+        ]
+    }
+});
+        require.async('app', function (App) {
+            var app = new App();
+            app.$appendTo(document.querySelector('#container'));
+        })
+    </script>
+<script type="text/javascript" charset="utf-8" src="http://10.1.84.165:8132/livereload.js"></script></body>
+</html>

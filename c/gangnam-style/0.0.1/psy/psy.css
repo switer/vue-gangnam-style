@@ -1,0 +1,10 @@
+.gangnam-psy {}
+    .gangnam-psy .psy {height: 160px;width: 120px;overflow: hidden;}
+    .gangnam-psy .psy img {height: 120px;width: 90px;display: block;position: absolute;left: 0;
+        -webkit-animation:psy-dance 1s ease-out;}
+
+@-webkit-keyFrames psy-dance {
+    0% {top:40px;}
+    50% {top:20px;}
+    100% {top:40px;}
+}
