@@ -1,12 +1,16 @@
+'use strict';
+
 var music = new Audio();
-    music.src = __uri('gangnam-loop2.ogg');
-    music.autoplay = false;
-    music.loop = true;
-    music.load();
+
+music.src = __uri('gangnam-loop.ogg');
+music.autoplay = false;
+music.loop = true;
+music.load();
 
 Vue.component('gangnam-style', {
     template: __inline('gangnam-style.tpl'),
     ready: function () {
+
         this.$el.querySelector('.sig').addEventListener('mouseover', function(e) {
             music.play();
         });

@@ -6,19 +6,14 @@
     <link rel="stylesheet" href="../components/gangnam-style/gangnam-style.css">
 </head>
 <body>
-    <div id="app">
-        <div style="display:-webkit-box">
-          <gangnam-style></gangnam-style>
-          <gangnam-style></gangnam-style>
-          <gangnam-style></gangnam-style>
-        </div>
-    </div>
+    <div id="container"></div>
     <script src="scrat.js"></script>
     <script src="vue.js"></script>
     <script>
         require.config(__FRAMEWORK_CONFIG__);
-        require.async('boot', function (boot) {
-            boot();
+        require.async('app', function (App) {
+            var app = new App();
+            app.$appendTo(document.querySelector('#container'));
         })
     </script>
 </body>
