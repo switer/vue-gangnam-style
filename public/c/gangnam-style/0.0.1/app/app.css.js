@@ -1,1 +1,1 @@
-require.defineCSS('gangnam-style/0.0.1/app/app.css', ".app{}.app .gangnam-psy{margin:50px;margin-top:0}");
+require.defineCSS('gangnam-style/0.0.1/app/app.css', ".app{}.app .gangnam-psy,.app .gangnam-style,.app .range-input{display:inline-block}.app .gangnam-psy{margin:50px;margin-top:0}.app .range-input{margin-top:80px;margin-left:50px}");
