@@ -10,20 +10,20 @@ music.load();
 Vue.component('gangnam-style', {
     template: __inline('gangnam-style.tpl'),
     ready: function () {
-
-        this.$el.querySelector('.sig').addEventListener('mouseover', function(e) {
+        // TODO
+    },
+    methods: {
+        onPlay: function () {
             music.play();
-        });
-
-        this.$el.querySelector('.sig').addEventListener('mouseout', function(e) {
+        },
+        onPause: function () {
             music.pause();
-        });
-
-        this.$el.addEventListener('webkitTransitionEnd', function(e) {
+        },
+        onEnd: function (e) {
             if (e.propertyName == 'height' &&
                 parseInt(window.getComputedStyle(e.target).height) < 10) {
                 music.load();
             }
-        });
+        }
     }
 })

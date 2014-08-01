@@ -3,7 +3,7 @@ var express = require('express'),
     app = express(),
     port = process.env.PORT || 3001;
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use('/public', express.static(path.join(__dirname, 'public')));
 
 app.get('/', function (req, res) {
     res.redirect('/gangnam-style/0.0.1/');

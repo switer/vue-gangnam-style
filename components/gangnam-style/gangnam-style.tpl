@@ -1,6 +1,6 @@
 <div class="gangnam-style">
     <div class="maia-signature">
-      <div class="sig zg-sig">
+      <div class="sig zg-sig" v-on="mouseover: onPlay, mouseout: onPause, webkitTransitionEnd: onEnd">
         <div class="psydroid zg-psydroid">
           <img alt="" class="zg-psydroid-head" src="images/psydroid-head.png"> 
           <img alt="" class="zg-psydroid-body" src="images/psydroid-body.png"> 

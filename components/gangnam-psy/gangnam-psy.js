@@ -16,15 +16,16 @@ module.exports = Vue.component('gangnam-psy', {
         var props = this.$el.attributes;
         this.$data.invert = props.invert.value;
 
-        this.$el.addEventListener('mouseover', function(e) {
+    },
+    methods: {
+        onPlay: function () {
             gangnamStyle.load();
             gangnamStyle.play();
             this.$data.isHover = true;
-        }.bind(this));
-
-        this.$el.addEventListener('mouseout', function(e) {
+        },
+        onPause: function () {
             gangnamStyle.pause();
             this.$data.isHover = false;
-        }.bind(this));
+        }
     }
 })

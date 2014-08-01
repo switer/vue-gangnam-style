@@ -6,11 +6,10 @@ fis.config.set('project.exclude', 'node_modules/**');
 fis.config.set('framework', {
     debug: false,
     cache: true,
-    urlPattern: '/c/%s',
+    urlPattern: '/public/c/%s',
     comboPattern: '/co??%s',
     alias: {
         
     }
 });
-
-fis.config.set('framework.cache', true);
+fis.config.set('urlPrefix', '/public');
