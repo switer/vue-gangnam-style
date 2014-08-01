@@ -2,6 +2,9 @@
   "name": "gangnam-style",
   "version": "0.0.1",
   "private": true,
+  "scrat": {
+    "urlPrefix": "/vue-gangnam-style/public"
+  },
   "scripts": {
     "start": "node index"
   },
