@@ -1,0 +1,1 @@
+require.defineCSS('gangnam-style/0.0.1/range-input/range-input.css', ".range-input{border:1px solid #ccc;padding:5px;display:inline-block;margin-top:10px}");
