@@ -19,7 +19,7 @@ module.exports = Vue.component('gangnam-psy', {
     },
     methods: {
         onPlay: function () {
-            gangnamStyle.load();
+            // gangnamStyle.load();
             gangnamStyle.play();
             this.$data.isHover = true;
         },

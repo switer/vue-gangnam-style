@@ -9,9 +9,11 @@ module.exports = Vue.extend({
     },
     template: __inline('app.tpl'),
     ready: function () {
+        
         this.onRangeChange = function (value) {
             this.$data.scale = value
         }.bind(this)
+
         this.$on('range-change', this.onRangeChange);
     },
     beforeDestroy: function () {
